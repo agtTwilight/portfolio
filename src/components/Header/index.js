@@ -12,8 +12,10 @@ export const Header = () => {
 
     function hideNav(nav) {
         document.addEventListener("click", (e) => {
-            if(!nav.contains(e.target) && e.target !== document.querySelector("#nav-toggle")) {
-                nav.setAttribute("style", "transform: translateX(100%);")
+            if(window.screen.width <= 576) {
+                if(!nav.contains(e.target) && e.target !== document.querySelector("#nav-toggle")) {
+                    nav.setAttribute("style", "transform: translateX(100%);")
+                }
             }
         });
     }
