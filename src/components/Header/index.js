@@ -22,7 +22,7 @@ export const Header = () => {
 
   return (
     <nav>
-      <p>Lukas</p>
+      <p>Logo</p>
       <div id="nav-links">
         <a href="#About">About</a>
         <a href="#Projects">Projects</a>

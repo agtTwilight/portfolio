@@ -1,0 +1,17 @@
+#footer-icons {
+    position: absolute;
+    bottom: 0;
+    margin: 1rem 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-icons img {
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+    width: 3rem;
+}
