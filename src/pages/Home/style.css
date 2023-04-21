@@ -1,13 +1,14 @@
+#home-wrap {
+    text-align: center;
+}
+
 #rotating-text {
     position: relative;
     color: var(--coffeebrown);
     animation: rotate 10s ease infinite;
-    z-index: 0;
+    z-index: 1;
 }
 
-#home-wrap {
-    text-align: center;
-}
 
 @media (max-width:576px) {
     #rotating-text-container {
