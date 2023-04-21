@@ -1,3 +1,4 @@
+import exit from "./assets/exit.png"
 import menu from "./assets/menu.png"
 import React from "react";
 import resume from "./assets/resume.pdf";
@@ -6,30 +7,33 @@ import "./style.css";
 export const Header = () => {
     async function displayNav() {
         const nav = document.querySelector("#nav-links");
+        const exitBtn = document.querySelector("#nav-close");
+        const menuBtn = document.querySelector("#nav-open");
         nav.setAttribute("style", "transform: translateX(0);");
-        hideNav(nav);
+        menuBtn.setAttribute("style", "display: none");
+        exitBtn.setAttribute("style", "display: block;");
     }
 
-    function hideNav(nav) {
-        document.addEventListener("click", (e) => {
-            if(window.screen.width <= 576) {
-                if(!nav.contains(e.target) && e.target !== document.querySelector("#nav-toggle")) {
-                    nav.setAttribute("style", "transform: translateX(100%);")
-                }
-            }
-        });
+    function hideNav() {
+        const nav = document.querySelector("#nav-links");
+        const exitBtn = document.querySelector("#nav-close");
+        const menuBtn = document.querySelector("#nav-open");
+        nav.setAttribute("style", "transform: translateX(100%);");
+        menuBtn.setAttribute("style", "display: block;");
+        exitBtn.setAttribute("style", "display: none;");
     }
 
   return (
     <nav>
       <p>Logo</p>
       <div id="nav-links">
-        <a href="#About">About</a>
+        <a id="first-link" href="#About">About</a>
         <a href="#Projects">Projects</a>
         <a href="#Contact">Contact</a>
         <a id="resume" href={resume}>Resume</a>
       </div>
-      <img id="nav-toggle" onClick={displayNav} src={menu} alt="hamburger button"></img>
+      <img id="nav-open" onClick={displayNav} src={menu} alt="hamburger button to open the nav on mobile"></img>
+      <img id="nav-close" onClick={hideNav} src={exit} alt="An X to close the nav on mobile"></img>
     </nav>
   );
 };

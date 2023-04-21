@@ -14,10 +14,17 @@ nav * {
     color: var(--coffeebrown);
 }
 
-#nav-toggle {
+#nav-open {
     display: none;
     height: 2rem;
     width: 2rem;
+}
+
+#nav-close {
+    display: none;
+    margin-right: 1.3rem;
+    height: 1.3rem;
+    width: 1.3rem;
 }
 
 #nav-links a {
@@ -30,7 +37,7 @@ nav * {
 }
 
 @media (max-width: 576px) {
-    #nav-toggle {
+    #nav-open {
         display: block;
     }
 
@@ -38,13 +45,12 @@ nav * {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         position: absolute;
         margin: 0;
-        width: 50%;
-        height: 100vh;
-        border: solid var(--coffeebrown);
-        border-right: none;
+        margin-top: 3rem;
+        padding-top: 4rem;
+        min-width: 100vw;
+        min-height: calc(100vh);
         background-color: var(--lattecream);
         top: 0;
         right: 0;
@@ -56,4 +62,8 @@ nav * {
     #nav-links a {
         margin: 1rem 0;
     }
+
+    /* #first-link {
+        margin-top: 3rem !important;
+    } */
 }
