@@ -1,0 +1,45 @@
+#rotating-text-container {
+    height: 5rem;
+    line-height: 5rem;
+    overflow: hidden;
+}
+
+#rotating-text {
+    position: relative;
+    color: var(--coffeebrown);
+    animation: rotate 10s ease infinite;
+}
+
+#home-wrap {
+    text-align: center;
+}
+
+@keyframes rotate {
+    0% {
+        top: 0;
+    }
+    20% {
+        top: 0;
+    }
+    25% {
+        top: -5rem;
+    }
+    45% {
+        top: -5rem;
+    }
+    50% {
+        top: -10rem;
+    }
+    70% {
+        top: -10rem;
+    }
+    75% {
+        top: 0;
+    }
+    95% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
+}

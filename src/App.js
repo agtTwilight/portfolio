@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <section id="content-wrap">
+      <section id="body-wrap">
         <Home />
       </section>
       <Footer />
