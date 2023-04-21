@@ -1,45 +1,86 @@
-#rotating-text-container {
-    height: 5rem;
-    line-height: 5rem;
-    overflow: hidden;
-}
-
 #rotating-text {
     position: relative;
     color: var(--coffeebrown);
     animation: rotate 10s ease infinite;
+    z-index: 0;
 }
 
 #home-wrap {
     text-align: center;
 }
 
-@keyframes rotate {
-    0% {
-        top: 0;
+@media (max-width:576px) {
+    #rotating-text-container {
+        height: 3rem;
+        line-height: 3rem;
+        overflow: hidden;
     }
-    20% {
-        top: 0;
+    
+    @keyframes rotate {
+        0% {
+            top: 0;
+        }
+        20% {
+            top: 0;
+        }
+        25% {
+            top: -3rem;
+        }
+        45% {
+            top: -3rem;
+        }
+        50% {
+            top: -6rem;
+        }
+        70% {
+            top: -6rem;
+        }
+        75% {
+            top: 0;
+        }
+        95% {
+            top: 0;
+        }
+        100% {
+            top: 0;
+        }
     }
-    25% {
-        top: -5rem;
+}
+
+@media (min-width:1021px) {
+    #rotating-text-container {
+        height: 5rem;
+        line-height: 5rem;
+        overflow: hidden;
     }
-    45% {
-        top: -5rem;
-    }
-    50% {
-        top: -10rem;
-    }
-    70% {
-        top: -10rem;
-    }
-    75% {
-        top: 0;
-    }
-    95% {
-        top: 0;
-    }
-    100% {
-        top: 0;
+    
+    @keyframes rotate {
+        0% {
+            top: 0;
+        }
+        20% {
+            top: 0;
+        }
+        25% {
+            top: -5rem;
+        }
+        45% {
+            top: -5rem;
+        }
+        50% {
+            top: -10rem;
+        }
+        70% {
+            top: -10rem;
+        }
+        75% {
+            top: 0;
+        }
+        95% {
+            top: 0;
+        }
+        100% {
+            top: 0;
+        }
     }
 }
