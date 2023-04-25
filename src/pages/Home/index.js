@@ -1,4 +1,4 @@
-import arrowdown from "./assets/arrowdown.png"
+import downarrow from "./assets/downarrow.png"
 import React from "react";
 import "./style.css";
 
@@ -23,7 +23,7 @@ export const Home = () => {
       <section id="home-buttons">
         <button>Contact</button>
         <a href="#projects">
-            <img src={arrowdown} alt="An arrow facing downward."></img>
+            <img src={downarrow} alt="An arrow facing downward."></img>
             <p>See my work</p>
         </a>
       </section>
