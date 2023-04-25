@@ -1,11 +1,11 @@
-import portrait from "./assets/portrait.png";
+import arrowdown from "./assets/arrowdown.png"
 import React from "react";
 import "./style.css";
 
 export const Home = () => {
   return (
     <section id="home-wrap">
-      <h2>Hi, I'm Lukas</h2>
+      <h2>(logo) Lukas MacMillen</h2>
       <section id="rotating-text-container">
         <h1 id="rotating-text">
           Full-Stack Developer
@@ -20,18 +20,13 @@ export const Home = () => {
         Development and Data Science. I'm specializing in, and focused on,
         developing API surfaces and Back-End infrastructures.
       </p>
-      {/* <section id="bottom-home">
-        <div id="bottom-home-left">
-            <h2>Highlights:</h2>
-        </div>
-        <div id="bottom-home-right">
-          <img id="portrait" src={portrait} alt="Portrait of Lukas"></img>
-          <div id="home-buttons">
-            <button>About Me</button>
-            <button>Contact Me</button>
-          </div>
-        </div>
-      </section> */}
+      <section id="home-buttons">
+        <button>Contact</button>
+        <a href="#projects">
+            <img src={arrowdown} alt="An arrow facing downward."></img>
+            <p>See my work</p>
+        </a>
+      </section>
     </section>
   );
 };

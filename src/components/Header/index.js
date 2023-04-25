@@ -27,9 +27,9 @@ export const Header = () => {
     <nav>
       <p>Logo</p>
       <div id="nav-links">
-        <a id="first-link" href="#About">About</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
+        <a id="first-link" href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
         <a id="resume" href={resume}>Resume</a>
       </div>
       <img id="nav-open" onClick={displayNav} src={menu} alt="hamburger button to open the nav on mobile"></img>

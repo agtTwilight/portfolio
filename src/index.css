@@ -15,10 +15,12 @@ code {
 #root {
     position: relative;
     min-height: 100vh;
-    min-width: 100vw;
-    background-color: var(--toastedwhite);
-    --toastedwhite: #f3f1ea;
+    overflow: hidden;
+    background-color: var(--white);
+    --white: #f7f6f3;
+    --toastedwhite: #e9e6db;
     --lattecream: #edd6c0;
+    --lightcoffeebrown: #bd9c83;
     --coffeebrown: #988373;
 
 }
@@ -45,7 +47,7 @@ code {
     h1 {
         margin: 0;
         padding: 0;
-        font-size: 4rem;
+        font-size: 7rem;
     }
     
     h2 {
