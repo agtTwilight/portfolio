@@ -1,18 +1,14 @@
-import About from "./pages/About"
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects"
+import Pages from "./pages";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <section id="body-wrap">
-        <Home />
-        {/* <About /> */}
-        <Projects />
-      </section>
+      <div id="body-wrap">
+        <Pages />
+      </div>
       <Footer />
     </div>
   );
