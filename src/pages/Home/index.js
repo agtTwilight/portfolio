@@ -21,7 +21,7 @@ export const Home = () => {
         developing API surfaces and Back-End infrastructures.
       </p>
       <section id="home-buttons">
-        <button>Contact</button>
+        <button>Contact Me</button>
         <a href="#projects">
             <img src={downarrow} alt="An arrow facing downward."></img>
             <p>See my work</p>
