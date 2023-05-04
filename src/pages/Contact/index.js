@@ -1,10 +1,12 @@
 import React from 'react'
 import ContactForm from '../../components/ContactForm'
+import './style.css'
 
 export const Contact = () => {
   return (
-    <section>
-        <h2>Contact Form</h2>
+    <section id='contact-section'>
+        <h2>What's Next?</h2>
+        <button>Contact Me!</button>
         <ContactForm />
     </section>
   )
