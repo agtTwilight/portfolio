@@ -10,7 +10,7 @@
     width: fit-content;
     max-height: fit-content;
     border: solid var(--coffeebrown);
-    background-color: var(--lightcoffeebrown);
+    background-color: var(--darktoastedwhite);
 }
 
 #contactForm * {
@@ -20,7 +20,7 @@
 #contactForm input, textarea {
     color: var(--coffeebrown);
     max-width: 150px;
-    background-color: var(--lattecream);
+    background-color: var(--toastedwhite);
     border: solid 1px var(--coffeebrown);
     border-radius: 6px;
     padding: 3px;

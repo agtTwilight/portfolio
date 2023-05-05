@@ -18,7 +18,8 @@ code {
     overflow: hidden;
     background-color: var(--white);
     --white: #f7f6f3;
-    --toastedwhite: #e9e6db;
+    --toastedwhite: #d8d3c2;
+    --darktoastedwhite: #e9d2bc;
     --lattecream: #edd6c0;
     --lightcoffeebrown: #bd9c83;
     --coffeebrown: #988373;
