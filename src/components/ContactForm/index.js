@@ -36,7 +36,7 @@ export const ContactForm = () => {
         </div>
         <textarea name="message" placeholder="Type your message here" />
       </section>
-      <input id="contactBtn" type="submit" value="Submit" />
+      <input id="contactBtn" type="submit" value="Submit"/>
     </form>
   );
 };
