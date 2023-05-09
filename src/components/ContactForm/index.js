@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import exit from "../../components/Header/assets/exit.png"
+import React, { useRef } from "react";
 import "./style.css";
 
 export const ContactForm = () => {
@@ -27,8 +28,16 @@ export const ContactForm = () => {
       );
   };
 
+  function hideForm() {
+    document
+        .querySelector('#contactForm')
+        .setAttribute('style', 'transform: translateX(100);');
+  }
+
   return (
     <form id="contactForm" ref={form} onSubmit={sendEmail}>
+        <img id="form-close-desktop" onClick={hideForm} src={exit} alt="An X to close the nav on mobile"></img>
+        <h2>Get In Touch!</h2>
       <section id="contactInputs">
         <div>
           <input type="text" name="user_name" placeholder="Name" />

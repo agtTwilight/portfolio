@@ -4,6 +4,7 @@
     align-items: center;
     padding: 1rem;
     background-color: var(--white);
+    transition: 0.5s ease-in-out;
 }
 
 #contactForm input, textarea {
@@ -15,8 +16,8 @@
     padding: 3px;
 }
 
-#contactForm h3 {
-    margin: 0 auto;
+#contactForm h2 {
+    color: var(--coffeebrown);
 }
 
 ::placeholder {
@@ -31,7 +32,12 @@
 
 #contactInputs {
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+
+#contactInputs input, textarea {
+    min-width: 250px;
 }
 
 #contactInputs div {
@@ -40,12 +46,11 @@
     margin: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 999px) {
     #contactForm {
         position: absolute;
         top: 0;
         transform: translateX(100%);
-        transition: 0.5s ease-in-out;
         margin: 0;
         margin-top: 3rem;
         padding-top: 4rem;
@@ -54,11 +59,32 @@
         z-index: 1;
     }
 
-    #contactInputs input, textarea {
-        min-width: 250px;
+    #form-close-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    #contactForm {
+        position: fixed;
+        margin: 0;
+        justify-content: center;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        border-left: solid var(--toastedwhite) ;
+        border-bottom: solid var(--toastedwhite) ;
+        padding: 0 2.8rem;
+        height: 100vh;
+        z-index: 1;
     }
 
-    #contactInputs {
-        flex-direction: column;
+    #form-close-desktop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 4rem 1rem;
+        height: 1.3rem;
+        width: 1.3rem;
     }
 }

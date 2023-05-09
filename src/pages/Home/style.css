@@ -50,7 +50,7 @@
     color: var(--lightcoffeebrown);
 }
 
-@media (max-width:576px) {
+@media (max-width:999px) {
     #rotating-text-container {
         height: 3rem;
         line-height: 3rem;
@@ -93,7 +93,7 @@
     }
 }
 
-@media (min-width:1021px) {
+@media (min-width:1000px) {
     #rotating-text-container {
         margin: 1rem;
         height: 8rem;

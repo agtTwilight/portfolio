@@ -44,7 +44,7 @@ nav * {
     color: var(--lattecream);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 999px) {
     #nav-open {
         display: block;
     }
@@ -71,8 +71,4 @@ nav * {
     #nav-links a {
         margin: 1rem 0;
     }
-
-    /* #first-link {
-        margin-top: 3rem !important;
-    } */
 }
