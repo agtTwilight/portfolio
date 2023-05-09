@@ -3,6 +3,17 @@ import React from "react";
 import "./style.css";
 
 export const Home = (props) => {
+
+    const handleUnderlineShow = () => {
+        document.querySelector("#underline")
+            .setAttribute("style", "width: 76%;");
+    }
+
+    const handleUnderlineHide = () => {
+        document.querySelector("#underline")
+            .setAttribute("style", "width: 0");
+    }
+
   return (
     <section id="home-wrap">
       <h2>(logo) Lukas MacMillen</h2>
@@ -22,9 +33,10 @@ export const Home = (props) => {
       </p>
       <section id="home-buttons">
         <button onClick={props.showForm}>Contact Me</button>
-        <a href="#projects">
+        <a href="#projects" onMouseOver={handleUnderlineShow} onMouseOut={handleUnderlineHide}>
             <img src={downarrow} alt="An arrow facing downward."></img>
             <p>See my work</p>
+            <hr id="underline"></hr>
         </a>
       </section>
     </section>

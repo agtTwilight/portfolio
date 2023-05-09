@@ -18,12 +18,12 @@
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 16rem;
     margin: 2rem;
 }
 
 #home-buttons button {
     margin-right: 2rem;
+    width: 125px;
     padding: 1rem 1.5rem;
     border-radius: 50px;
     cursor: pointer;
@@ -35,8 +35,8 @@
 
 #home-buttons a {
     display: flex;
+    position: relative;
     text-decoration: none;
-    transition: 0.2s ease-in-out;
 }
 
 #home-buttons img {
@@ -47,12 +47,17 @@
 }
 
 #home-buttons p {
-    margin: 0 0 0 6px;
+    margin: 0 0 0 3px;
     padding: 0;
     color: var(--lightcoffeebrown);
+    width: 100px;
 }
 
 @media (max-width:999px) {
+    #underline {
+        display: none;
+    }
+
     #rotating-text-container {
         height: 3rem;
         line-height: 3rem;
@@ -96,8 +101,18 @@
 }
 
 @media (min-width:1000px) {
-    #home-buttons button:hover, a:hover {
+    #home-buttons button:hover {
         transform: scale(1.1);
+    }
+
+    #underline {
+        border: solid 0.5px var(--lightcoffeebrown);
+        position: absolute;
+        left: 26px;
+        margin: 0;
+        bottom: 0;
+        width: 0;
+        transition: 0.3s ease-in-out;
     }
 
     #rotating-text-container {
