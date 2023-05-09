@@ -28,6 +28,7 @@
     border-radius: 50px !important;
     width: 72px;
     margin: 0 auto;
+    transition: 0.2s ease-in-out;
 }
 
 #contactInputs {
@@ -47,6 +48,11 @@
 }
 
 @media (max-width: 999px) {
+
+    #form-ref {
+        width: 100vw;
+    }
+
     #contactForm {
         position: absolute;
         top: 0;
@@ -83,8 +89,17 @@
         position: fixed;
         top: 0;
         right: 0;
-        margin: 4rem 1rem;
+        margin: 4rem 1.3rem;
         height: 1.3rem;
         width: 1.3rem;
+        transition: 0.2s ease-in-out;
+    }
+
+    #form-close-desktop:hover {
+        transform: scale(1.2);
+    }
+
+    #contactBtn:hover {
+        transform: scale(1.1);
     }
 }
