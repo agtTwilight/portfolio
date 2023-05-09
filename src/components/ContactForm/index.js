@@ -30,7 +30,7 @@ export const ContactForm = () => {
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
-  }, []);
+  },);
 
   const refOne = useRef(null);
 
