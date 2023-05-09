@@ -2,7 +2,7 @@ import downarrow from "./assets/downarrow.png"
 import React from "react";
 import "./style.css";
 
-export const Home = () => {
+export const Home = (props) => {
   return (
     <section id="home-wrap">
       <h2>(logo) Lukas MacMillen</h2>
@@ -21,7 +21,7 @@ export const Home = () => {
         developing API surfaces and Back-End infrastructures.
       </p>
       <section id="home-buttons">
-        <button>Contact Me</button>
+        <button onClick={props.showForm}>Contact Me</button>
         <a href="#projects">
             <img src={downarrow} alt="An arrow facing downward."></img>
             <p>See my work</p>

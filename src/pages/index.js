@@ -5,12 +5,27 @@ import Projects from "./Projects";
 import React from "react";
 
 export const Pages = () => {
+    function showForm() {
+        const contactForm = document.querySelector("#contactForm");
+        contactForm.setAttribute("style", "transform: translateX(0);");
+        document
+          .querySelector("#body-wrap")
+          .setAttribute("style", "max-height: calc(100vh - 12rem); min-height: 0;");
+    
+          document
+            .querySelector("#nav-open")
+            .setAttribute("style", "display: none;");
+    
+        document
+            .querySelector("#form-close")
+            .setAttribute("style", "display: block;");
+      }
   return (
     <section>
-      <Home />
+      <Home showForm={showForm} />
       <About />
       <Projects />
-      <Contact />
+      <Contact showForm={showForm} />
     </section>
   );
 };
