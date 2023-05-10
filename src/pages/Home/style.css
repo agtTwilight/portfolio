@@ -21,8 +21,7 @@
     margin: 2rem;
 }
 
-#home-buttons button {
-    margin-right: 2rem;
+.contact-button {
     width: 125px;
     padding: 1rem 1.5rem;
     border-radius: 50px;
@@ -34,6 +33,7 @@
 }
 
 #home-buttons a {
+    margin-left: 2rem;
     display: flex;
     position: relative;
     text-decoration: none;
@@ -97,7 +97,7 @@
 }
 
 @media (min-width:1000px) {
-    #home-buttons button:hover {
+    .contact-button:hover {
         transform: scale(1.1);
     }
 

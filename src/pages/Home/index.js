@@ -21,7 +21,7 @@ export const Home = (props) => {
         developing API surfaces and Back-End infrastructures.
       </p>
       <section id="home-buttons">
-        <button onClick={props.showForm}>Contact Me</button>
+        <button className="contact-button" onClick={props.showForm}>Contact Me</button>
         <a href="#projects">
             <img src={downarrow} alt="An arrow facing downward."></img>
             <p>See my work</p>
