@@ -54,10 +54,6 @@
 }
 
 @media (max-width:999px) {
-    #underline {
-        display: none;
-    }
-
     #rotating-text-container {
         height: 3rem;
         line-height: 3rem;
@@ -105,14 +101,19 @@
         transform: scale(1.1);
     }
 
-    #underline {
-        border: solid 0.5px var(--lightcoffeebrown);
+    #home-buttons a::before {
+        content: "";
         position: absolute;
         left: 26px;
-        margin: 0;
         bottom: 0;
         width: 0;
-        transition: 0.3s ease-in-out;
+        height: 1px;
+        background-color: var(--lightcoffeebrown);
+        transition: 0.3s ease-in;
+    }
+
+    #home-buttons a:hover::before {
+        width: 77%;
     }
 
     #rotating-text-container {
