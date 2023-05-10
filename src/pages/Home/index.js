@@ -17,7 +17,7 @@ export const Home = (props) => {
       </section>
       <p id="elevator-pitch">
         I am a Seattle-based software developer trained in Full-Stack
-        Development and Data Science. I'm specializing in, and focused on,
+        Development and Data Science. I currently specialize in
         developing API surfaces and Back-End infrastructures.
       </p>
       <section id="home-buttons">
