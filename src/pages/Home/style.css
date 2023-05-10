@@ -109,7 +109,7 @@
         width: 0;
         height: 1px;
         background-color: var(--lightcoffeebrown);
-        transition: 0.3s ease-in;
+        transition: 0.2s ease-in;
     }
 
     #home-buttons a:hover::before {
