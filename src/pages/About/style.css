@@ -1,11 +1,11 @@
 #about {
+    padding-top: 4rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    border: solid red;
 }
 
 #about-top {
@@ -82,21 +82,22 @@
     justify-content: center;
     margin-top: 2rem;
     width: 80%;
-    border: solid peachpuff;
     text-align: center;
 }
 
 #about-things {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2rem;
 }
 
-#thing1 {
-    border: solid red;
+#thing1, #thing2 {
+    max-width: 300px;
 }
 
 #about-bottom-line {
     width: 2px;
     height: 100px;
     background-color: var(--coffeebrown);
+    margin-top: 4rem;
 }

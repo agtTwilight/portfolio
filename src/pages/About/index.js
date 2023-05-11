@@ -47,13 +47,13 @@ export const About = () => {
         <h2>Two Things I'll Bring to Your Team</h2>
         <section id="about-things">
           <section id="thing1">
-            <h3>Thing 1</h3>
-            <p></p>
+            <h3>Leadership</h3>
+            <p>I love mentorship, and I want to become a senior software developer during my career. Although I need more time in the industry before my technical skills are sufficient for a senior level position, I've been a leader and mentor in other settings, and will continue to grow my technical skills so I can enhance the knowledge of everyone on our team.</p>
           </section>
           <div id="about-bottom-line"></div>
           <section id="thing2">
-            <h3>Thing 2</h3>
-            <p></p>
+            <h3>Professionalism</h3>
+            <p>My year of full-time research taught me a lot about life outside of education. Most notably, the unpredictable nature of research enhanced my time management and communication skills tremendously. These skills are two that I now pride myself in, and I am excited to bring them to your team!</p>
           </section>
         </section>
       </section>

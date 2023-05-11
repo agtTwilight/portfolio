@@ -42,7 +42,7 @@ export const Header = () => {
 
   return (
     <nav id="#header">
-      <p>Logo</p>
+      <a href="#home-wrap"><p>Logo</p></a>
       <div id="nav-links">
         <a id="first-link" href="#about">About</a>
         <a href="#projects">Projects</a>
