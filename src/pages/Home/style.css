@@ -1,161 +1,161 @@
 #home-wrap {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 #rotating-text {
-    position: relative;
-    color: var(--coffeebrown);
-    animation: rotate 10s ease infinite;
-    z-index: 1;
+	position: relative;
+	color: var(--coffeebrown);
+	animation: rotate 10s ease infinite;
+	z-index: 1;
 }
 
 #home-buttons {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 2rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 2rem;
 }
 
 .contact-button {
-    width: 125px;
-    padding: 1rem 1.5rem;
-    border-radius: 50px;
-    cursor: pointer;
-    color: var(--white);
-    background-color: var(--lightcoffeebrown);
-    border: solid 1px var(--toastedwhite);
-    transition: 0.2s ease-in-out;
+	width: 125px;
+	padding: 1rem 1.5rem;
+	border-radius: 50px;
+	cursor: pointer;
+	color: var(--white);
+	background-color: var(--lightcoffeebrown);
+	border: solid 1px var(--toastedwhite);
+	transition: 0.2s ease-in-out;
 }
 
 #home-buttons a {
-    margin-left: 2rem;
-    display: flex;
-    position: relative;
-    text-decoration: none;
+	margin-left: 2rem;
+	display: flex;
+	position: relative;
+	text-decoration: none;
 }
 
 #home-buttons img {
-    margin: 0;
-    padding: 0;
-    height: 1.3rem;
-    width: 1.3rem;
+	margin: 0;
+	padding: 0;
+	height: 1.3rem;
+	width: 1.3rem;
 }
 
 #home-buttons p {
-    margin: 0 0 0 3px;
-    padding: 0;
-    color: var(--lightcoffeebrown);
-    width: 100px;
+	margin: 0 0 0 3px;
+	padding: 0;
+	color: var(--lightcoffeebrown);
+	width: 100px;
 }
 
-@media (max-width:999px) {
-    #rotating-text-container {
-        height: 3rem;
-        line-height: 3rem;
-        overflow: hidden;
-    }
+@media (max-width: 999px) {
+	#rotating-text-container {
+		height: 3rem;
+		line-height: 3rem;
+		overflow: hidden;
+	}
 
-    #elevator-pitch {
-        margin: 1rem 2rem;
-        font-size: 0.9rem;
-    }
-    
-    @keyframes rotate {
-        0% {
-            top: 0;
-        }
-        20% {
-            top: 0;
-        }
-        25% {
-            top: -3rem;
-        }
-        45% {
-            top: -3rem;
-        }
-        50% {
-            top: -6rem;
-        }
-        70% {
-            top: -6rem;
-        }
-        75% {
-            top: 0;
-        }
-        95% {
-            top: 0;
-        }
-        100% {
-            top: 0;
-        }
-    }
+	#elevator-pitch {
+		margin: 1rem 2rem;
+		font-size: 0.9rem;
+	}
+
+	@keyframes rotate {
+		0% {
+			top: 0;
+		}
+		20% {
+			top: 0;
+		}
+		25% {
+			top: -3rem;
+		}
+		45% {
+			top: -3rem;
+		}
+		50% {
+			top: -6rem;
+		}
+		70% {
+			top: -6rem;
+		}
+		75% {
+			top: 0;
+		}
+		95% {
+			top: 0;
+		}
+		100% {
+			top: 0;
+		}
+	}
 }
 
-@media (min-width:1000px) {
-    .contact-button:hover {
-        transform: scale(1.1);
-    }
+@media (min-width: 1000px) {
+	.contact-button:hover {
+		transform: scale(1.1);
+	}
 
-    #home-buttons a::before {
-        content: "";
-        position: absolute;
-        left: 26px;
-        bottom: 0;
-        width: 0;
-        height: 1px;
-        background-color: var(--lightcoffeebrown);
-        transition: 0.2s ease-in;
-    }
+	#home-buttons a::before {
+		content: '';
+		position: absolute;
+		left: 26px;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		background-color: var(--lightcoffeebrown);
+		transition: 0.2s ease-in;
+	}
 
-    #home-buttons a:hover::before {
-        width: 77%;
-    }
+	#home-buttons a:hover::before {
+		width: 77%;
+	}
 
-    #rotating-text-container {
-        margin: 1rem;
-        height: 8rem;
-        line-height: 8rem;
-        overflow: hidden;
-    }
+	#rotating-text-container {
+		margin: 1rem;
+		height: 8rem;
+		line-height: 8rem;
+		overflow: hidden;
+	}
 
-    #elevator-pitch {
-        max-width: 60%;
-        line-height: 2rem;
-        font-size: 1.3rem;
-    }
-    
-    @keyframes rotate {
-        0% {
-            top: 0;
-        }
-        20% {
-            top: 0;
-        }
-        25% {
-            top: -8rem;
-        }
-        45% {
-            top: -8rem;
-        }
-        50% {
-            top: -16rem;
-        }
-        70% {
-            top: -16rem;
-        }
-        75% {
-            top: 0;
-        }
-        95% {
-            top: 0;
-        }
-        100% {
-            top: 0;
-        }
-    }
+	#elevator-pitch {
+		max-width: 60%;
+		line-height: 2rem;
+		font-size: 1.3rem;
+	}
+
+	@keyframes rotate {
+		0% {
+			top: 0;
+		}
+		20% {
+			top: 0;
+		}
+		25% {
+			top: -8rem;
+		}
+		45% {
+			top: -8rem;
+		}
+		50% {
+			top: -16rem;
+		}
+		70% {
+			top: -16rem;
+		}
+		75% {
+			top: 0;
+		}
+		95% {
+			top: 0;
+		}
+		100% {
+			top: 0;
+		}
+	}
 }

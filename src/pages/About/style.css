@@ -1,103 +1,104 @@
 #about {
-    padding-top: 4rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+	padding-top: 4rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }
 
 #about-top {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0;
-    padding: 0;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0;
+	padding: 0;
 }
 
 #about h2 {
-    position: relative;
-    color: var(--coffeebrown);
+	position: relative;
+	color: var(--coffeebrown);
 }
 
 #about-hook {
-    margin-right: 2rem;
-    min-width: 400px;
+	margin-right: 2rem;
+	min-width: 400px;
 }
 
 #about-hook a {
-    text-decoration: underline;
-    color: var(--coffeebrown);
+	text-decoration: underline;
+	color: var(--coffeebrown);
 }
 
 #about-img-box {
-    position: relative;
-    min-height: 400px;
-    min-width: 400px;
-    background-color: var(--toastedwhite);
-    border: solid 2px var(--coffeebrown);
-    border-radius: 8px;
-    overflow: visible;
-    z-index: 1;
+	position: relative;
+	min-height: 400px;
+	min-width: 400px;
+	background-color: var(--toastedwhite);
+	border: solid 2px var(--coffeebrown);
+	border-radius: 8px;
+	overflow: visible;
+	z-index: 1;
 }
 
 #about-bg-box {
-    position: absolute;
-    min-height: 400px;
-    min-width: 400px;
-    right: -10px;
-    top: 10px;
-    border: solid 2px var(--coffeebrown);
-    border-radius: 8px;
-    background-color: var(--white);
+	position: absolute;
+	min-height: 400px;
+	min-width: 400px;
+	right: -10px;
+	top: 10px;
+	border: solid 2px var(--coffeebrown);
+	border-radius: 8px;
+	background-color: var(--white);
 }
 
 #dot1 {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--coffeebrown);
-    z-index: 2;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--coffeebrown);
+	z-index: 2;
 }
 
 #dot2 {
-    position: absolute;
-    left: 10px;
-    top: 25px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--coffeebrown);
-    z-index: 2;
+	position: absolute;
+	left: 10px;
+	top: 25px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--coffeebrown);
+	z-index: 2;
 }
 
 #about-bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-    width: 80%;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 2rem;
+	width: 80%;
+	text-align: center;
 }
 
 #about-things {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem;
 }
 
-#thing1, #thing2 {
-    max-width: 300px;
+#thing1,
+#thing2 {
+	max-width: 300px;
 }
 
 #about-bottom-line {
-    width: 2px;
-    height: 100px;
-    background-color: var(--coffeebrown);
-    margin-top: 4rem;
+	width: 2px;
+	height: 100px;
+	background-color: var(--coffeebrown);
+	align-self: center;
 }
