@@ -42,7 +42,7 @@ export const Header = () => {
 
 	return (
 		<nav id="#header">
-			<a href="#home-wrap">
+			<a href="#home">
 				<p>Logo</p>
 			</a>
 			<div id="nav-links">
@@ -50,7 +50,7 @@ export const Header = () => {
 					About
 				</a>
 				<a href="#projects">Projects</a>
-				<a href="#contact-section">Contact</a>
+				<a href="#contact">Contact</a>
 				<a id="resume" href={resume} target="_blank" rel="noreferrer">
 					Resume
 				</a>

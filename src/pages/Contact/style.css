@@ -1,12 +1,94 @@
-#contact-section {
+#contactForm {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: fit-content;
-	margin: 0 auto;
+	justify-content: center;
+	min-height: 100vh;
 }
 
-#contact-section h2 {
+#contactTop {
+	max-width: 420px;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#contact h2 {
 	color: var(--coffeebrown);
-	margin-bottom: 2rem;
+}
+
+#contactInputs {
+	display: flex;
+	flex-direction: column;
+}
+
+#contactInputs input,
+textarea {
+	outline: none;
+	resize: none;
+	color: var(--lightcoffeebrown);
+	background-color: var(--white);
+	border: none;
+	border-bottom: solid var(--lightcoffeebrown) 1px;
+	margin-bottom: 1.5rem;
+	font-size: 16px;
+}
+
+#contactInputs label {
+	color: var(--lightcoffeebrown);
+	margin-bottom: 0.5rem;
+}
+
+#contactInputs .inputContainer {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+#contactInfo .inputContainer {
+	width: 40%;
+}
+
+#contactInputs input:focus {
+	color: var(--coffeebrown);
+	border-bottom: solid var(--coffeebrown) 1px;
+}
+
+.inputContainer:focus-within ::placeholder {
+	color: var(--coffeebrown) !important;
+}
+
+.inputContainer:focus-within label {
+	color: var(--coffeebrown) !important;
+}
+
+::placeholder {
+	color: var(--lightcoffeebrown);
+	font-size: 16px;
+}
+
+#contactBtn {
+	width: 75px;
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	cursor: pointer;
+	color: var(--white);
+	background-color: var(--lightcoffeebrown);
+	border: solid 1px var(--toastedwhite);
+	transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 1000px) {
+	#contactInfo {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#contactInputs {
+		min-width: 600px;
+	}
+
+	#contactBtn:hover {
+		transform: scale(1.1);
+		background-color: var(--darklattecream);
+	}
 }

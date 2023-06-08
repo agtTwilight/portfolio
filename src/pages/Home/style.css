@@ -1,5 +1,5 @@
-#home-wrap {
-	min-height: 90vh;
+#home {
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,9 +21,9 @@
 	margin: 2rem;
 }
 
-.contact-button {
-	width: 125px;
-	padding: 1rem 1.5rem;
+#contact-button {
+	width: 110px;
+	padding: 0.5rem 1rem;
 	border-radius: 50px;
 	cursor: pointer;
 	color: var(--white);
@@ -64,56 +64,31 @@
 		margin: 1rem 2rem;
 		font-size: 0.9rem;
 	}
-
-	@keyframes rotate {
-		0% {
-			top: 0;
-		}
-		20% {
-			top: 0;
-		}
-		25% {
-			top: -3rem;
-		}
-		45% {
-			top: -3rem;
-		}
-		50% {
-			top: -6rem;
-		}
-		70% {
-			top: -6rem;
-		}
-		75% {
-			top: 0;
-		}
-		95% {
-			top: 0;
-		}
-		100% {
-			top: 0;
-		}
-	}
 }
 
 @media (min-width: 1000px) {
-	.contact-button:hover {
+	#contact-button:hover {
+		background-color: var(--darklattecream);
 		transform: scale(1.1);
 	}
 
-	#home-buttons a::before {
+	#underlined-btn::before {
 		content: '';
 		position: absolute;
 		left: 26px;
 		bottom: 0;
 		width: 0;
 		height: 1px;
-		background-color: var(--lightcoffeebrown);
+		background-color: var(--darklattecream);
 		transition: 0.2s ease-in;
 	}
 
-	#home-buttons a:hover::before {
+	#underlined-btn:hover::before {
 		width: 77%;
+	}
+
+	#underlined-btn:hover p {
+		color: var(--darklattecream);
 	}
 
 	#rotating-text-container {
@@ -127,35 +102,5 @@
 		max-width: 60%;
 		line-height: 2rem;
 		font-size: 1.3rem;
-	}
-
-	@keyframes rotate {
-		0% {
-			top: 0;
-		}
-		20% {
-			top: 0;
-		}
-		25% {
-			top: -8rem;
-		}
-		45% {
-			top: -8rem;
-		}
-		50% {
-			top: -16rem;
-		}
-		70% {
-			top: -16rem;
-		}
-		75% {
-			top: 0;
-		}
-		95% {
-			top: 0;
-		}
-		100% {
-			top: 0;
-		}
 	}
 }
