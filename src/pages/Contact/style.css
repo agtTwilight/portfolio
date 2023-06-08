@@ -7,9 +7,7 @@
 }
 
 #contactTop {
-	max-width: 420px;
 	text-align: center;
-	margin-bottom: 3rem;
 }
 
 #contact h2 {
@@ -44,25 +42,22 @@ textarea {
 	font-size: 16px;
 }
 
-#contactInfo .inputContainer {
-	width: 40%;
-}
-
-#contactInputs input:focus {
-	color: var(--coffeebrown);
-	border-bottom: solid var(--coffeebrown) 1px;
+#contactInputs input:focus,
+textarea:focus {
+	color: var(--sage);
+	border-bottom: solid var(--sage) 1px;
 }
 
 .inputContainer:focus-within ::placeholder {
-	color: var(--coffeebrown) !important;
+	color: var(--sage) !important;
 }
 
 .inputContainer:focus-within label {
-	color: var(--coffeebrown) !important;
+	color: var(--sage) !important;
 }
 
 ::placeholder {
-	color: var(--lightcoffeebrown);
+	color: var(--mediumcoffeebrown);
 	font-size: 16px;
 }
 
@@ -77,7 +72,33 @@ textarea {
 	transition: 0.2s ease-in-out;
 }
 
+@media (max-width: 999px) {
+	#contactForm {
+		padding: 0 3rem;
+	}
+
+	#contactTop {
+		margin-bottom: 1.5rem;
+	}
+
+	#contactTop * {
+		margin: 0;
+	}
+
+	#contactTop h2 {
+		margin-bottom: 0.5rem;
+	}
+
+	#contactInputs {
+		width: 100%;
+	}
+}
+
 @media (min-width: 1000px) {
+	#contactTop {
+		max-width: 420px;
+		margin-bottom: 3rem;
+	}
 	#contactInfo {
 		display: flex;
 		justify-content: space-between;
@@ -85,6 +106,10 @@ textarea {
 
 	#contactInputs {
 		min-width: 600px;
+	}
+
+	#contactInfo .inputContainer {
+		width: 40%;
 	}
 
 	#contactBtn:hover {
