@@ -34,7 +34,10 @@ export const Contact = () => {
 				<form id="contactForm" ref={form} onSubmit={sendEmail}>
 					<section id="contactTop">
 						<h2>Send me a message!</h2>
-						<p>My inbox is always open for questions or collaboration.</p>
+						<p>
+							Have any questions or want to collaborate? My inbox is always
+							open.
+						</p>
 					</section>
 					<section id="contactInputs">
 						<div id="contactInfo">

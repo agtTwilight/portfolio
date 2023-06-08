@@ -8,9 +8,9 @@ export const Home = (props) => {
 			<h2>(logo) Lukas MacMillen</h2>
 			<h1 id="rotating-text">Full-Stack Developer</h1>
 			<p id="elevator-pitch">
-				I am a Seattle-based software developer trained in Full-Stack
-				Development and Data Science. I currently specialize in developing API
-				surfaces and Back-End infrastructures.
+				I am a Seattle-based Full-Stack Developer with a passion for Data
+				Science. I currently specialize in developing API surfaces and Back-End
+				infrastructures.
 			</p>
 			<section id="home-buttons">
 				<a href="#contact">
