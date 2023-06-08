@@ -8,8 +8,8 @@ export const Home = (props) => {
 			<h2>(logo) Lukas MacMillen</h2>
 			<h1 id="rotating-text">Full-Stack Developer</h1>
 			<p id="elevator-pitch">
-				I am a Seattle-based Full-Stack Developer with a passion for Data
-				Science. I currently specialize in developing API surfaces and Back-End
+				I am a Seattle-based Full-Stack Developer and Data Science hobbyist. I
+				currently specialize in developing API surfaces and Back-End
 				infrastructures.
 			</p>
 			<section id="home-buttons">

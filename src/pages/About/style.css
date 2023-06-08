@@ -1,13 +1,11 @@
 #about {
-	padding: 3rem;
-	padding-top: 6rem;
+	padding: 2rem;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	border: solid blue;
 }
 
 #about-top {
@@ -17,6 +15,7 @@
 	align-items: center;
 	width: 80%;
 	margin: 0;
+	margin-bottom: 3rem;
 	padding: 0;
 }
 
@@ -79,29 +78,26 @@
 	z-index: 2;
 }
 
+#values {
+	margin-bottom: 1.5rem;
+}
+
 #about-bottom {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 5rem;
-	width: 80%;
-	text-align: center;
+	justify-content: space-between;
 }
 
-#about-things {
+#about-bottom * {
+	margin: 0.25rem 1rem;
+}
+
+#about-bottom div {
 	display: flex;
-	justify-content: space-evenly;
-	margin-top: 2rem;
+	flex-direction: column;
+	align-items: center;
 }
 
-#thing1,
-#thing2 {
-	max-width: 300px;
-}
-
-#about-bottom-line {
-	width: 2px;
-	height: 100px;
-	background-color: var(--coffeebrown);
-	align-self: center;
+#about-bottom img {
+	height: 3rem;
+	width: 3rem;
 }
