@@ -2,7 +2,7 @@ import React from 'react';
 import downarrow from './assets/downarrow.png';
 import './style.css';
 // TODO get another downarrow image and change between correct color on hover.
-export const Home = (props) => {
+export const Home = () => {
 	return (
 		<section id="home">
 			<h2>(logo) Lukas MacMillen</h2>

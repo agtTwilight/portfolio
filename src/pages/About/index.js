@@ -1,7 +1,9 @@
 import React from 'react';
 import collaboration from './assets/collaboration.png';
 import documentation from './assets/documentation.png';
+import github from './assets/github.png';
 import innovation from './assets/innovation.png';
+import linkedin from './assets/linkedin.png';
 import './style.css';
 
 export const About = () => {
@@ -23,16 +25,36 @@ export const About = () => {
 						infrastructures to sustain phenomanal end user experiences. I'm
 						currently looking for a role that will help me develop into a mentor
 						within the field.
+						<br></br>
+						<br></br>
+						When I'm not coding, I like to game, cook, adventure outside, and
+						spend time with my partner and our cat, Snickerdoodle.
 					</p>
 				</div>
 				<div id="about-img-box">
 					<img id="about-img" src="" alt=""></img>
 					<p id="dot1"></p>
 					<p id="dot2"></p>
+					<div id="about-links">
+						<a
+							href="https://github.com/agtTwilight"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={github} alt="github logo"></img>
+						</a>
+						<a
+							href="https://www.linkedin.com/in/lukas-macmillen/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={linkedin} alt="linkedin logo"></img>
+						</a>
+					</div>
 				</div>
 				<div id="about-bg-box"></div>
 			</section>
-			<h2 id="values">Core Values:</h2>
+			<h2 id="values">What I value in a team</h2>
 			<section id="about-bottom">
 				<div>
 					<img src={collaboration} alt=""></img>

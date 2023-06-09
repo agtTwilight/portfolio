@@ -41,33 +41,20 @@ export const Contact = () => {
 					</section>
 					<section id="contactInputs">
 						<div id="contactInfo">
-							<div className="inputContainer">
-								<label for="name">Your Name</label>
-								<input
-									id="name"
-									type="text"
-									name="user_name"
-									placeholder="Enter your name"
-								/>
-							</div>
-							<div className="inputContainer">
-								<label for="email">Your Email</label>
-								<input
-									id="email"
-									type="email"
-									name="user_email"
-									placeholder="Enter your email address"
-								/>
-							</div>
-						</div>
-						<div className="inputContainer">
-							<label for="message">Your Message</label>
-							<textarea
-								id="message"
-								name="message"
-								placeholder="Hi Lukas, we need an API surface for our application. When are you available to discuss ERD design and implementation?"
+							<input
+								id="name"
+								type="text"
+								name="user_name"
+								placeholder="Your Name"
+							/>
+							<input
+								id="email"
+								type="email"
+								name="user_email"
+								placeholder="Your Email"
 							/>
 						</div>
+						<textarea id="message" name="message" placeholder="Your Message" />
 					</section>
 					<input id="contactBtn" type="submit" value="Send" />
 				</form>

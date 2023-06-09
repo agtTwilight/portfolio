@@ -38,11 +38,31 @@
 	position: relative;
 	min-height: 400px;
 	min-width: 400px;
-	background-color: var(--toastedwhite);
+	background-color: var(--test);
 	border: solid 2px var(--coffeebrown);
 	border-radius: 8px;
 	overflow: visible;
 	z-index: 1;
+}
+
+#about-links {
+	position: absolute;
+	margin: 0 0.5rem;
+	padding: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#about-links img {
+	margin: 0;
+	padding: 0;
+	height: 3rem;
+	width: 3rem;
+	transition: 0.2s ease-in-out;
+}
+
+#about-links img:hover {
+	transform: scale(1.1);
 }
 
 #about-bg-box {
@@ -100,4 +120,10 @@
 #about-bottom img {
 	height: 3rem;
 	width: 3rem;
+}
+
+@media (min-width: 1000px) {
+	#about {
+		scroll-snap-align: center;
+	}
 }

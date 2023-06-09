@@ -7,13 +7,6 @@
 	text-align: center;
 }
 
-#rotating-text {
-	position: relative;
-	color: var(--coffeebrown);
-	animation: rotate 10s ease infinite;
-	z-index: 1;
-}
-
 #home-buttons {
 	display: flex;
 	align-items: center;
@@ -54,12 +47,6 @@
 }
 
 @media (max-width: 999px) {
-	#rotating-text-container {
-		height: 3rem;
-		line-height: 3rem;
-		overflow: hidden;
-	}
-
 	#elevator-pitch {
 		margin: 1rem 2rem;
 		font-size: 0.9rem;
@@ -67,6 +54,10 @@
 }
 
 @media (min-width: 1000px) {
+	#home {
+		scroll-snap-align: start;
+	}
+
 	#contact-button:hover {
 		background-color: var(--darklattecream);
 		transform: scale(1.1);
@@ -89,13 +80,6 @@
 
 	#underlined-btn:hover p {
 		color: var(--darklattecream);
-	}
-
-	#rotating-text-container {
-		margin: 1rem;
-		height: 8rem;
-		line-height: 8rem;
-		overflow: hidden;
 	}
 
 	#elevator-pitch {

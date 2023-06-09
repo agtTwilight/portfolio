@@ -16,6 +16,19 @@ code {
 		monospace;
 }
 
+h1 {
+	color: var(--coffeebrown);
+}
+
+h2,
+h3 {
+	color: var(--mediumcoffeebrown);
+}
+
+p {
+	color: var(--lightcoffeebrown);
+}
+
 #root {
 	position: relative;
 	min-height: 100vh;
@@ -23,11 +36,12 @@ code {
 	background-color: var(--white);
 	--white: #f7f6f3;
 	--toastedwhite: #d8d3c2;
+	--test: #dac9ba;
 	--darktoastedwhite: #e9d2bc;
 	--lattecream: #edd6c0;
 	--darklattecream: #bd9c83;
-	--lightcoffeebrown: #c0b1a5;
-	--mediumcoffeebrown: #9f8d7b;
+	--lightcoffeebrown: #bbac9f;
+	--mediumcoffeebrown: #a79485;
 	--coffeebrown: #988373;
 	--sage: #93ac8b;
 }
@@ -35,6 +49,15 @@ code {
 #body-wrap {
 	padding: 3rem 0;
 	min-height: 100vh;
+}
+
+#all-pages {
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.page {
+	scroll-snap-align: start;
 }
 
 @media (max-width: 999px) {

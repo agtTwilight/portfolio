@@ -23,34 +23,21 @@ export const Header = () => {
 		exitBtn.setAttribute('style', 'display: none;');
 	}
 
-	function hideForm() {
-		const contactForm = document.querySelector('#contactForm');
-		contactForm.setAttribute('style', 'transform: translateX(100%);');
-
-		document
-			.querySelector('#body-wrap')
-			.setAttribute('style', 'max-height: 0; min-height: 100vh;');
-
-		document
-			.querySelector('#nav-open')
-			.setAttribute('style', 'display: block;');
-
-		document
-			.querySelector('#form-close')
-			.setAttribute('style', 'display: none;');
-	}
-
 	return (
 		<nav id="#header">
-			<a href="#home">
+			<a href="#home" onClick={hideNav}>
 				<p>Logo</p>
 			</a>
-			<div id="nav-links">
+			<div id="nav-links" onClick={hideNav}>
 				<a id="first-link" href="#about">
 					About
 				</a>
-				<a href="#projects">Projects</a>
-				<a href="#contact">Contact</a>
+				<a href="#projects" onClick={hideNav}>
+					Projects
+				</a>
+				<a href="#contact" onClick={hideNav}>
+					Contact
+				</a>
 				<a id="resume" href={resume} target="_blank" rel="noreferrer">
 					Resume
 				</a>
@@ -64,12 +51,6 @@ export const Header = () => {
 			<img
 				id="nav-close"
 				onClick={hideNav}
-				src={exit}
-				alt="An X to close the nav on mobile"
-			></img>
-			<img
-				id="form-close"
-				onClick={hideForm}
 				src={exit}
 				alt="An X to close the nav on mobile"
 			></img>

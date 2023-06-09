@@ -23,17 +23,13 @@
 textarea {
 	outline: none;
 	resize: none;
-	color: var(--lightcoffeebrown);
-	background-color: var(--white);
-	border: none;
-	border-bottom: solid var(--lightcoffeebrown) 1px;
+	color: var(--mediumcoffeebrown);
+	background-color: var(--test);
+	border: solid var(--mediumcoffeebrown) 1px;
+	border-radius: 16px;
+	padding: 0.5rem;
 	margin-bottom: 1.5rem;
 	font-size: 16px;
-}
-
-#contactInputs label {
-	color: var(--lightcoffeebrown);
-	margin-bottom: 0.5rem;
 }
 
 #contactInputs .inputContainer {
@@ -44,16 +40,12 @@ textarea {
 
 #contactInputs input:focus,
 textarea:focus {
-	color: var(--sage);
-	border-bottom: solid var(--sage) 1px;
+	color: var(--coffeebrown);
+	border: solid var(--coffeebrown) 1px;
 }
 
-.inputContainer:focus-within ::placeholder {
-	color: var(--sage) !important;
-}
-
-.inputContainer:focus-within label {
-	color: var(--sage) !important;
+#contactInputs input:focus-within ::placeholder {
+	color: var(--coffeebrown) !important;
 }
 
 ::placeholder {
@@ -95,6 +87,10 @@ textarea:focus {
 }
 
 @media (min-width: 1000px) {
+	#contact {
+		scroll-snap-align: start;
+	}
+
 	#contactTop {
 		max-width: 420px;
 		margin-bottom: 3rem;
@@ -108,7 +104,7 @@ textarea:focus {
 		min-width: 600px;
 	}
 
-	#contactInfo .inputContainer {
+	#contactInfo input {
 		width: 40%;
 	}
 

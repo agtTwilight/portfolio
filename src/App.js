@@ -9,7 +9,7 @@ function App() {
 			<div id="body-wrap">
 				<Pages />
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }
