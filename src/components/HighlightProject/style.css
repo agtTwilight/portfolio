@@ -14,15 +14,22 @@
 }
 
 .tech-list {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 2rem;
+
 	display: flex;
-	gap: 1rem;
+	gap: 0.75rem;
 	list-style-type: none;
 	padding: 0;
+	margin-top: 2rem;
 }
 
 .tech-list li {
+	font-size: 12px;
 	padding: 0.5rem;
-	border: solid red;
+	border: solid var(--lightcoffeebrown);
 	border-radius: 8px;
 }
 
@@ -31,12 +38,15 @@
 		position: relative;
 		width: 800px;
 		height: 300px;
-		border: solid red;
 		border-radius: 16px;
+		border: solid var(--coffeebrown);
+		box-shadow: var(--mediumcoffeebrown) 0px 3px 6px,
+			var(--mediumcoffeebrown) 0px 3px 6px;
 	}
 
 	.highlight-content {
 		margin: 4rem 2rem;
+		max-width: 50%;
 	}
 
 	.highlight-links {
