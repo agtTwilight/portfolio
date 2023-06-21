@@ -1,0 +1,48 @@
+.highlight-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.highlight-card img {
+	margin: 0;
+	padding: 0;
+	height: 3rem;
+	width: 3rem;
+	transition: 0.2s ease-in-out;
+}
+
+.tech-list {
+	display: flex;
+	gap: 1rem;
+	list-style-type: none;
+	padding: 0;
+}
+
+.tech-list li {
+	padding: 0.5rem;
+	border: solid red;
+	border-radius: 8px;
+}
+
+@media (min-width: 1000px) {
+	.highlight-card {
+		position: relative;
+		width: 800px;
+		height: 300px;
+		border: solid red;
+		border-radius: 16px;
+	}
+
+	.highlight-content {
+		margin: 4rem 2rem;
+	}
+
+	.highlight-links {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin: 0 2rem;
+	}
+}

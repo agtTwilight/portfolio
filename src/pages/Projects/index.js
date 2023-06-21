@@ -1,8 +1,15 @@
 import React from 'react';
+import HighlightProject from '../../components/HighlightProject';
 import './style.css';
 
 export const Projects = () => {
-	return <div>index</div>;
+	return (
+		<section id="projects">
+			<HighlightProject />
+			<HighlightProject />
+			<HighlightProject />
+		</section>
+	);
 };
 
 export default Projects;
