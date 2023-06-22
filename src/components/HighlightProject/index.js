@@ -15,7 +15,7 @@ export const HighlightProject = () => {
 			<ul className="tech-list">
 				<li>HTML</li>
 				<li>CSS</li>
-				<li>JavScript</li>
+				<li>JavaScript</li>
 			</ul>
 			<div className="highlight-links">
 				<a>

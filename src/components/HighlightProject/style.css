@@ -40,8 +40,7 @@
 		height: 300px;
 		border-radius: 16px;
 		border: solid var(--coffeebrown);
-		box-shadow: var(--mediumcoffeebrown) 0px 3px 6px,
-			var(--mediumcoffeebrown) 0px 3px 6px;
+		box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
 	}
 
 	.highlight-content {
