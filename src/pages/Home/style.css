@@ -59,7 +59,7 @@
 	}
 
 	#contact-button:hover {
-		background-color: var(--darklattecream);
+		background-color: var(--mediumcoffeebrown);
 		transform: scale(1.1);
 	}
 
@@ -70,8 +70,12 @@
 		bottom: 0;
 		width: 0;
 		height: 1px;
-		background-color: var(--darklattecream);
+		background-color: var(--mediumcoffeebrown);
 		transition: 0.2s ease-in;
+	}
+
+	#underlined-btn img {
+		opacity: 0.7;
 	}
 
 	#underlined-btn:hover::before {
@@ -79,7 +83,11 @@
 	}
 
 	#underlined-btn:hover p {
-		color: var(--darklattecream);
+		color: var(--mediumcoffeebrown);
+	}
+
+	#underlined-btn:hover img {
+		opacity: 1;
 	}
 
 	#elevator-pitch {

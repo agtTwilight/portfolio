@@ -38,7 +38,7 @@
 	position: relative;
 	min-height: 400px;
 	min-width: 400px;
-	background-color: var(--test);
+	background-color: var(--lightwhite);
 	border: solid 2px var(--coffeebrown);
 	border-radius: 8px;
 	overflow: visible;
@@ -73,7 +73,7 @@
 	top: 10px;
 	border: solid 2px var(--coffeebrown);
 	border-radius: 8px;
-	background-color: var(--white);
+	background-color: var(--lightcoffeebrown);
 }
 
 #dot1 {

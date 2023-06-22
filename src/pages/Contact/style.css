@@ -110,6 +110,6 @@ textarea:focus {
 
 	#contactBtn:hover {
 		transform: scale(1.1);
-		background-color: var(--darklattecream);
+		background-color: var(--mediumcoffeebrown);
 	}
 }

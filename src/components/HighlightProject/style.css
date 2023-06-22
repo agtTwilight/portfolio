@@ -5,12 +5,16 @@
 	margin: 1rem;
 }
 
-.highlight-card img {
+.highlight-links img {
 	margin: 0;
 	padding: 0;
-	height: 3rem;
-	width: 3rem;
-	transition: 0.2s ease-in-out;
+	height: 2rem;
+	width: 2rem;
+	transition: 0.3s ease-in-out;
+}
+
+.highlight-links img:hover {
+	opacity: 0.7;
 }
 
 .tech-list {
@@ -39,7 +43,7 @@
 		width: 800px;
 		height: 300px;
 		border-radius: 16px;
-		border: solid var(--coffeebrown);
+		border: solid var(--coffeebrown) 1px;
 		box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
 		background-color: var(--lightwhite);
 	}
@@ -50,9 +54,11 @@
 	}
 
 	.highlight-links {
+		display: flex;
+		gap: 0.75rem;
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		margin: 0 2rem;
+		margin: 1rem 2rem;
 	}
 }
