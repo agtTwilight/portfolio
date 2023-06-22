@@ -1,4 +1,26 @@
 .project-card {
-	width: 30%;
-	border: solid red;
+	width: 220px;
+	height: 220px;
+	border: solid var(--coffeebrown);
+	border-radius: 8px;
+	box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
+	background-color: var(--lightwhite);
+	padding: 1rem;
+}
+
+.project-card > * {
+	margin: 0;
+	padding: 0;
+}
+
+.project-card p {
+	margin-top: 0.5rem;
+}
+
+.tech-used {
+	display: flex;
+	gap: 0.75rem;
+	list-style-type: none;
+	padding: 0;
+	margin-top: 1.5rem;
 }

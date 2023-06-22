@@ -24,7 +24,7 @@ textarea {
 	outline: none;
 	resize: none;
 	color: var(--mediumcoffeebrown);
-	background-color: var(--test);
+	background-color: var(--lightwhite);
 	border: solid var(--mediumcoffeebrown) 1px;
 	border-radius: 16px;
 	padding: 0.5rem;

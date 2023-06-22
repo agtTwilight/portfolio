@@ -7,7 +7,7 @@ export const Project = () => {
 			<img></img>
 			<h3>Project Title</h3>
 			<p>Some information about it</p>
-			<ul>
+			<ul className="tech-used">
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>JavaScript</li>

@@ -22,6 +22,7 @@
 
 #extra-projects {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	position: relative;
 	margin: 1rem;

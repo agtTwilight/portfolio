@@ -35,7 +35,9 @@ li {
 	min-height: 100vh;
 	overflow: hidden;
 	background-color: var(--white);
+	--lightwhite: #f7f6f6;
 	--white: #f7f6f3;
+	--lighttoastedwhite: #e8e4d9;
 	--toastedwhite: #d8d3c2;
 	--test: #dac9ba;
 	--darktoastedwhite: #e9d2bc;

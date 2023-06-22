@@ -7,7 +7,7 @@ export const HighlightProject = () => {
 	return (
 		<section className="highlight-card">
 			<div className="highlight-content">
-				<h2 className="highlight-title">Projct Title</h2>
+				<h2 className="highlight-title">Project Title</h2>
 				<p>
 					A brief description of the project. When text wraps it looks like this
 				</p>

@@ -41,6 +41,7 @@
 		border-radius: 16px;
 		border: solid var(--coffeebrown);
 		box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
+		background-color: var(--lightwhite);
 	}
 
 	.highlight-content {
