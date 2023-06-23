@@ -3,6 +3,18 @@
 	flex-direction: column;
 	justify-content: center;
 	margin: 1rem;
+
+	position: relative;
+	border: solid var(--coffeebrown) 1px;
+	box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
+	background-color: var(--lightwhite);
+}
+
+.highlight-links {
+	display: flex;
+	gap: 0.75rem;
+	position: absolute;
+	margin: 1rem;
 }
 
 .highlight-links img {
@@ -13,39 +25,38 @@
 	transition: 0.3s ease-in-out;
 }
 
-.highlight-links img:hover {
-	opacity: 0.7;
-}
-
 .tech-list {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	margin-left: 2rem;
 
 	display: flex;
 	gap: 0.75rem;
 	list-style-type: none;
 	padding: 0;
 	margin-top: 2rem;
+	margin-left: 1rem;
 }
 
-.tech-list li {
-	font-size: 12px;
-	padding: 0.5rem;
-	border: solid var(--lightcoffeebrown);
-	border-radius: 8px;
-}
-
-@media (min-width: 1000px) {
+@media (max-width: 683px) {
 	.highlight-card {
-		position: relative;
-		width: 800px;
+		width: 220px;
+		height: 220px;
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.highlight-links {
+		top: 0;
+		right: 0;
+	}
+}
+
+@media (min-width: 684px) and (max-width: 953px) {
+	.highlight-card {
+		width: 550px;
 		height: 300px;
 		border-radius: 16px;
-		border: solid var(--coffeebrown) 1px;
-		box-shadow: var(--coffeebrown) 0px 1px 3px, var(--coffeebrown) 0px 1px 3px;
-		background-color: var(--lightwhite);
 	}
 
 	.highlight-content {
@@ -54,11 +65,47 @@
 	}
 
 	.highlight-links {
-		display: flex;
-		gap: 0.75rem;
-		position: absolute;
 		right: 0;
 		bottom: 0;
-		margin: 1rem 2rem;
+	}
+
+	.highlight-links img:hover {
+		opacity: 0.7;
+	}
+
+	.tech-list li {
+		font-size: 12px;
+		padding: 0.5rem;
+		border: solid var(--lightcoffeebrown);
+		border-radius: 8px;
+	}
+}
+
+@media (min-width: 954px) {
+	.highlight-card {
+		width: 800px;
+		height: 300px;
+		border-radius: 16px;
+	}
+
+	.highlight-content {
+		margin: 4rem 2rem;
+		max-width: 50%;
+	}
+
+	.highlight-links {
+		right: 0;
+		bottom: 0;
+	}
+
+	.highlight-links img:hover {
+		opacity: 0.7;
+	}
+
+	.tech-list li {
+		font-size: 12px;
+		padding: 0.5rem;
+		border: solid var(--lightcoffeebrown);
+		border-radius: 8px;
 	}
 }

@@ -25,12 +25,11 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	position: relative;
-	margin: 1rem;
+	gap: 1rem;
 }
 
 @media (min-width: 1000px) {
 	#extra-projects {
 		width: 800px;
-		gap: 1rem;
 	}
 }

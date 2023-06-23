@@ -11,7 +11,7 @@ export const About = () => {
 		<section id="about">
 			<section id="about-top">
 				<div id="about-hook">
-					<h2>From Research to Development</h2>
+					<h2>About Me</h2>
 					<p>
 						Hello, my name is Lukas. I like to build API surfaces, full-stack
 						applications, and dabble in data analysis. I found my passion for
@@ -54,7 +54,7 @@ export const About = () => {
 				</div>
 				<div id="about-bg-box"></div>
 			</section>
-			<h2 id="values">What I value in a team</h2>
+			<h2 id="values">What I bring to a team</h2>
 			<section id="about-bottom">
 				<div>
 					<img src={collaboration} alt=""></img>

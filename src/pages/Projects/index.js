@@ -6,10 +6,12 @@ import './style.css';
 export const Projects = () => {
 	return (
 		<section id="projects">
-			<h2>Some Things I've Built</h2>
-			<HighlightProject />
-			<HighlightProject />
-			<HighlightProject />
+			<h2>Project Highlights</h2>
+			<div id="highlight-projects">
+				<HighlightProject />
+				<HighlightProject />
+				<HighlightProject />
+			</div>
 			<section id="projects-lower">
 				<h2>Other Projects</h2>
 				<div id="extra-projects">
