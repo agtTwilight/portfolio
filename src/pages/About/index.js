@@ -41,7 +41,7 @@ export const About = () => {
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={github} alt="github logo"></img>
+							<img id="about-github" src={github} alt="github logo"></img>
 						</a>
 						<a
 							href="https://www.linkedin.com/in/lukas-macmillen/"
