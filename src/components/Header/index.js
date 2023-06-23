@@ -26,7 +26,7 @@ export const Header = () => {
 	return (
 		<nav id="#header">
 			<a href="#home" onClick={hideNav}>
-				<p>Logo</p>
+				<p>Home</p>
 			</a>
 			<div id="nav-links" onClick={hideNav}>
 				<a id="first-link" href="#about">

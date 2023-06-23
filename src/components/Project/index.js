@@ -5,7 +5,7 @@ export const Project = (props) => {
 	return (
 		<a href={props.github}>
 			<section className="project-card">
-				<img></img>
+				{/* <img></img> */}
 				<h3>{props.title}</h3>
 				<p>{props.description}</p>
 				<ul className="tech-used">

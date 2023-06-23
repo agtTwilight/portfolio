@@ -5,7 +5,7 @@ import './style.css';
 export const Home = () => {
 	return (
 		<section id="home">
-			<h2>(logo) Lukas MacMillen</h2>
+			<h2>Lukas MacMillen</h2>
 			<h1 id="rotating-text">Full-Stack Developer</h1>
 			<p id="elevator-pitch">
 				I am a Seattle-based Full-Stack Developer and Data Science hobbyist. I
