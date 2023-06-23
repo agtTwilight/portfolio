@@ -69,6 +69,10 @@
 		padding: 0;
 	}
 
+	#about-top {
+		margin-bottom: 4rem;
+	}
+
 	#about-hook {
 		margin-right: 2rem;
 		min-width: 400px;

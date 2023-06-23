@@ -1,4 +1,9 @@
-body {
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+textarea {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -74,10 +79,6 @@ li {
 }
 
 @media (min-width: 1000px) {
-	html {
-		scroll-behavior: smooth;
-	}
-
 	h1 {
 		margin: 0;
 		padding: 0;
