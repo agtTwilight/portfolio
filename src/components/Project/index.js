@@ -1,18 +1,20 @@
 import React from 'react';
 import './style.css';
 
-export const Project = () => {
+export const Project = (props) => {
 	return (
-		<section className="project-card">
-			<img></img>
-			<h3>Project Title</h3>
-			<p>Some information about it</p>
-			<ul className="tech-used">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-			</ul>
-		</section>
+		<a href={props.github}>
+			<section className="project-card">
+				<img></img>
+				<h3>{props.title}</h3>
+				<p>{props.description}</p>
+				<ul className="tech-used">
+					{props.techUsed.map((tech, index) => {
+						return <li key={index}>{tech}</li>;
+					})}
+				</ul>
+			</section>
+		</a>
 	);
 };
 
