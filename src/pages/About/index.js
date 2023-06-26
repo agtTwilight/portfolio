@@ -13,22 +13,24 @@ export const About = () => {
 				<div id="about-hook">
 					<h2>About Me</h2>
 					<p>
-						Hello, my name is Lukas. I like to build API surfaces, full-stack
-						applications, and dabble in data analysis. I found my passion for
-						programming during my time as a research scientist, where I used
-						Python, MATLAB, and R to analyze genetic and neurobiological data
-						sets.
+						Hello, my name is Lukas. I like to build API surfaces, design
+						databases, and maintain internal full-stack applications. I found my
+						passion for programming during my time as a research scientist,
+						where I used Python, MATLAB, and R to analyze genetic and
+						neurobiological data sets.
 						<br></br>
 						<br></br>
 						I've transitioned into software development to code full-time,
-						further study system design, and build efficient back-end
-						infrastructures to sustain phenomanal end user experiences. I'm
-						currently looking for a role that will help me develop into a mentor
-						within the field.
+						further study system design, and build efficient internal
+						applications and back-end infrastructures that enhance the developer
+						and end user experience. I'm currently looking for a role that will
+						help me develop into a mentor within the field, so I can pursue my
+						goal of becoming a senior software developer.
 						<br></br>
 						<br></br>
 						When I'm not coding, I like to game, cook, adventure outside, and
-						spend time with my partner and our cat, Snickerdoodle.
+						spend time with my partner and our cat, Snickerdoodle. I also love
+						to read, and I'm currently taking suggestions for new books!
 					</p>
 				</div>
 				<div id="about-img-box">
@@ -54,22 +56,22 @@ export const About = () => {
 				</div>
 				<div id="about-bg-box"></div>
 			</section>
-			<h2 id="values">What I bring to a team</h2>
+			<h2 id="values">What I value in a team</h2>
 			<section id="about-bottom">
 				<div>
 					<img src={collaboration} alt=""></img>
 					<h3>Collaboration</h3>
-					<p>Mentoring one another</p>
+					<p>Support, mentorship, and clear communication</p>
 				</div>
 				<div>
 					<img src={innovation} alt=""></img>
 					<h3>Innovation</h3>
-					<p>Researching new ideas</p>
+					<p>Cross-functional teams & research centered design</p>
 				</div>
 				<div>
 					<img src={documentation} alt=""></img>
-					<h3>Documentaion</h3>
-					<p>Communicting our work</p>
+					<h3>Code Quality</h3>
+					<p>Efficiency, documentation, and review</p>
 				</div>
 			</section>
 		</section>

@@ -36,8 +36,10 @@
 
 #about-bottom div {
 	display: flex;
+	width: 250px;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 }
 
 #about-bottom img {
