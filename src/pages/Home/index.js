@@ -6,10 +6,11 @@ export const Home = () => {
 	return (
 		<section id="home">
 			<h2>Lukas MacMillen</h2>
-			<h1 id="rotating-text">Backend Developer</h1>
+			<h1 id="rotating-text">Full Stack Developer</h1>
 			<p id="elevator-pitch">
-				I am a Seattle-based Backend Developer and Data Scientist. I specialize
-				in developing API surfaces, databases, and internal applications.
+				I am a Seattle-based Full Stack Developer and Data Scientist. I
+				specialize in developing API surfaces, databases, and internal
+				applications.
 			</p>
 			<section id="home-buttons">
 				<a href="#contact">

@@ -35,6 +35,7 @@ export const About = () => {
 				</div>
 				<div id="about-img-box">
 					<img id="about-img" src="" alt=""></img>
+					<h2 id="temp">Headshot photo coming soon</h2>
 					<p id="dot1"></p>
 					<p id="dot2"></p>
 					<div id="about-links">

@@ -76,7 +76,7 @@
 	.tech-list li {
 		font-size: 12px;
 		padding: 0.5rem;
-		border: solid var(--lightcoffeebrown);
+		border: solid var(--lightcoffeebrown) 1px;
 		border-radius: 8px;
 	}
 }
